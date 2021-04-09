@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<title>My Page</title>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo5.png"></a>
+			</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<nav class="navbar">
+				<ul>
+					<li><a href="index.html" class="link">Home</a></li>
+					<li><a href="about.html" class="link">Despre noi</a></li>
+					<li class="dropdown">
+						<a href="#" class="link">Produse<i class="far fa-heart"></i></a>
+						<div class="dropdown-content">
+							<a href="torturi.html">Torturi</a>
+							<a href="prajituri.html">Prăjituri de casă</a>
+							<a href="briose.html">Brioșe</a>
+							<a href="macaroons.html">Macaroons</a>
+							<a href="cheesecake.html">Cheesecake</a>
+						</div>
+					</li>
+					<li><a href="galerie.html" class="link">Galerie</a></li>
+					<li><a href="contact.html" class="link">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="section-one">
+		<div class="gallery-title">
+			<h2>Cheesecake</h2> 
+		</div>
+		<div class="slice-row">
+			<div class="slice-col-10">
+				s
+			</div>
+			<div class="slice-col-40">
+				<div class="item-container">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/cheesecake.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slice-col-40">
+				<div class="recipe">
+					<h1>Cheesecake cu Fructe de Pădure</h1>
+					<h3><i class="fa fa-clock"></i>Timp preparare: 90 minute</h3>
+					<h3><i class="fas fa-utensils"></i>Porții: 12 bucăți</h3>
+					<h3><i class="fa fa-coffee"></i>Ingrediente:</h3>
+					<ul> 
+						<li>150 g biscuiți digestivi, mărunțiți</li>
+						<li>5-6 linguri de unt</li>
+						<li>220 g cremă de brânză sau mascarpone</li> 
+						<li>500 ml frișcă</li>
+						<li>200 g iaurt de fructe de pădure</li>
+						<li>3 pliculețe sau 30 g de gelatină</li> 
+						<li>200 g zahăr tos</li>
+						<li>500 g fructe de pădure proaspete</li>
+					</ul> 
+				</div>
+			</div>
+			<div class="slice-col-10">
+				s
+			</div>
+		</div>	
+		<br>
+
+		<div class="slice-row">
+			<div class="slice-col-10">
+				s
+			</div>
+			<div class="slice-col-40">
+				<div class="recipe">
+					<h1>Mod de preparare:</h1>
+					<ul>
+						<li>Se pun biscuiții într-o pungă care se poate sigila și se folosește un sucitor pentru a-i mărunți.</li>
+						<li>Se amestecă biscuiții cu untul topit într-un vas, apoi se apasă acest amestec cu o lingură sau cu degetele curate până când se lipește de fundul vasului si pereții acestuia. Se lasă vasul la răcit cel puțin o oră.</li>
+						<li>Se amestecă iaurtul, crema de brânză și frișca cu mixerul până când amestecul devine cremos.</li> 
+						<li>Se adaugă 20 g de gelatină amestecată cu puțină apă, după instrucțiunile de pe pachet.</li>
+						<li>Se pune crema peste stratul de biscuiți și se pune la frigider pentru încă 30 de minute.</li>
+						<li>Se pun fructele de pădure și zaharul la foc până când se obține consistența unui gem, apoi se lasă la răcit după care se adaugă 10 g de gelatină.</li>
+						<li>Se toarnă jeleul peste cremă.</li>
+						<li>Înainte de a fi servit, cheesecake-ul va sta la răcit pentru câteva ore.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slice-col-40">
+				<div class="item-container">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/f5.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slice-col-10">
+				s
+			</div>
+		</div>	
+
+		<div class="fixed">
+			<a href="#" onclick="openForm()">Feedback</a>
+		</div>
+		<div class="form-popup" id="myForm">
+			<form action="" class="form-container">
+				<h1>Lasă-ne un feedback</h1>
+				<p>Cât de mult apreciați produsele noastre?</p>
+				<div class="rate">
+					<input type="radio" id="star5"><label for="star5"></label>
+					<input type="radio" id="star4"><label for="star4"></label>
+					<input type="radio" id="star3"><label for="star3"></label>
+					<input type="radio" id="star2"><label for="star2"></label>
+					<input type="radio" id="star1"><label for="star1"></label>
+				</div>
+				<button type="submit" class="submit-btn">Votează</button>
+				<button type="submit" class="close-btn" onclick="closeForm()">X</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-container">
+			<div class="footer-col">
+				<h1>COMENZI & LIVRARE</h1>
+				<a href="#">Cum comand?</a>
+				<a href="#">Cum plătesc?</a>
+				<a href="#">Livrare</a>
+			</div>
+			<div class="footer-col">
+				<h1>SOCIAL MEDIA</h1>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h1>CONTACT</h1>
+				<div class="contact">
+					<a href="#"><i class="fa fa-home"></i>Campia Turzii, Cluj</a>
+					<a href="#"><i class="fa fa-phone"></i>0264 892 871</a>
+					<a href="#"><i class="fa fa-envelope"></i>office@mmcakes.ro</a>
+				</div>
+			</div>
+		</div>
+		<div class="end-footer">
+			<div>&#169; MMCakes 2020 | Webdesign by DM</div>
+		</div>
+	</footer>
+
+	<script>
+		function openForm() {
+			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		}
+
+		const toggleButton = document.getElementsByClassName('toggle-button')[0]
+		const navbar = document.getElementsByClassName('navbar')[0]
+
+		toggleButton.addEventListener('click', () => {
+			navbar.classList.toggle('active')
+		})
+
+	</script>
+</body>
+</html>

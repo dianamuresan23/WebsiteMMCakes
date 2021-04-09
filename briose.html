@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<title>My Page</title>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo5.png"></a>
+			</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<nav class="navbar">
+				<ul>
+					<li><a href="index.html" class="link">Home</a></li>
+					<li><a href="about.html" class="link">Despre noi</a></li>
+					<li class="dropdown">
+						<a href="#" class="link">Produse<i class="far fa-heart"></i></a>
+						<div class="dropdown-content">
+							<a href="torturi.html">Torturi</a>
+							<a href="prajituri.html">Prăjituri de casă</a>
+							<a href="briose.html">Brioșe</a>
+							<a href="macaroons.html">Macaroons</a>
+							<a href="cheesecake.html">Cheesecake</a>
+						</div>
+					</li>
+					<li><a href="galerie.html" class="link">Galerie</a></li>
+					<li><a href="contact.html" class="link">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="section-one">
+		<div class="gallery-title">
+			<h2>Brioșe</h2> 
+		</div>
+
+		<div class="slice-row">
+			<div class="slice-col-30">
+				<div class="recipe">
+					<h1>Brioșe cu Fulgi de Ciocolată</h1>
+					<h3><i class="fa fa-clock"></i>Timp preparare: 50 minute</h3>
+					<h3><i class="fas fa-utensils"></i>Porții: 12 bucăți</h3>
+					<h3><i class="fa fa-coffee"></i>Ingrediente:</h3>
+					<ul> 
+						<li>280 g făină</li>
+						<li>2 ouă</li>
+						<li>120 ml lapte</li>
+						<li>180 g zahăr</li> 
+						<li>8 g praf de copt</li>
+						<li>120 g unt 82% grăsime</li>
+						<li>10 g zahăr vanilat</li> 
+						<li>80 g ciocolată cu conținut ridicat de cacao</li>
+						<li>25 g cacao cu conținut redus de grăsime</li>
+						<li>1 praf de sare</li>
+					</ul> 
+				</div>
+			</div>
+
+			<div class="slice-col-40">
+				<div class="item-container">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/briose2.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slice-col-30">
+				<div class="recipe">
+					<h1>Mod de preparare:</h1>
+					<ul>
+						<li>Într-un bol se amestecă făina, zahărul, zahărul vanilat, cacao, praful de sare și praful de copt.</li>
+						<li>Separat, se amestecă untul topit cu ouăle și laptele.</li>
+						<li>Se adaugă 40gr ciocolată mărunțită și se amestecă</li> 
+						<li>Se amestecă cele 2 compoziții până când se obține o compoziție omogenă.</li>
+						<li>Tava pentru brioșe se tapetează cu hârtie decor pentru brioșe și se vor umple de jumătate.</li>
+						<li>Se presară restul de ciocolată marunțită și se adaugă restul de compoziție.</li>
+						<li>Brioșele se coc la 180C pentru maxim 25 minute.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="slice-row">
+			<div class="slice-col-40">
+				<div class="item-container">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/briose.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slice-col-20">
+				<div class="recipe">
+					<h2>Poftă bună!</h2>
+				</div>
+			</div>
+
+			<div class="slice-col-40">
+				<div class="item-container">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/briose3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="fixed">
+			<a href="#" onclick="openForm()">Feedback</a>
+		</div>
+
+		<div class="form-popup" id="myForm">
+			<form action="" class="form-container">
+				<h1>Lasă-ne un feedback</h1>
+				<p>Cât de mult apreciați produsele noastre?</p>
+				<div class="rate">
+					<input type="radio" id="star5"><label for="star5"></label>
+					<input type="radio" id="star4"><label for="star4"></label>
+					<input type="radio" id="star3"><label for="star3"></label>
+					<input type="radio" id="star2"><label for="star2"></label>
+					<input type="radio" id="star1"><label for="star1"></label>
+				</div>
+				<button type="submit" class="submit-btn">Votează</button>
+				<button type="submit" class="close-btn" onclick="closeForm()">X</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-container">
+			<div class="footer-col">
+				<h1>COMENZI & LIVRARE</h1>
+				<a href="#">Cum comand?</a>
+				<a href="#">Cum plătesc?</a>
+				<a href="#">Livrare</a>
+			</div>
+			<div class="footer-col">
+				<h1>SOCIAL MEDIA</h1>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h1>CONTACT</h1>
+				<div class="contact">
+					<a href="#"><i class="fa fa-home"></i>Campia Turzii, Cluj</a>
+					<a href="#"><i class="fa fa-phone"></i>0264 892 871</a>
+					<a href="#"><i class="fa fa-envelope"></i>office@mmcakes.ro</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="end-footer">
+			<div>&#169; MMCakes 2020 | Webdesign by DM</div>
+		</div>
+	</footer>
+
+	<script>
+		function openForm() {
+			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		}
+
+		const toggleButton = document.getElementsByClassName('toggle-button')[0]
+		const navbar = document.getElementsByClassName('navbar')[0]
+
+		toggleButton.addEventListener('click', () => {
+			navbar.classList.toggle('active')
+		})
+
+	</script>
+</body>
+</html>

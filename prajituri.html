@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<title>My Page</title>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo5.png"></a>
+			</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<nav class="navbar">
+				<ul>
+					<li><a href="index.html" class="link">Home</a></li>
+					<li><a href="about.html" class="link">Despre noi</a></li>
+					<li class="dropdown">
+						<a href="#" class="link">Produse<i class="far fa-heart"></i></a>
+						<div class="dropdown-content">
+							<a href="torturi.html">Torturi</a>
+							<a href="prajituri.html">Prăjituri de casă</a>
+							<a href="briose.html">Brioșe</a>
+							<a href="macaroons.html">Macaroons</a>
+							<a href="cheesecake.html">Cheesecake</a>
+						</div>
+					</li>
+					<li><a href="galerie.html" class="link">Galerie</a></li>
+					<li><a href="contact.html" class="link">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="section-one">
+		<div class="gallery-title">
+			<h2>Prăjituri de casă</h2> 
+		</div>
+
+		<div class="slice-row">
+			<div class="slice-col-50">
+				<div class="slice-text">
+					<h2>Snickers</h2>
+					<h4>Compoziție:</h4>
+					<ul>
+						<li>Blat cu nucă</li>
+						<li>Cremă de ciocolată albă</li>
+						<li>Cremă de caramel cu nucă prajită</li>
+						<li>Cremă de ciocolată</li>
+					</ul>
+					<h4>Preț:</h4>
+					<p>60 lei/kg</p>
+				</div>
+			</div>
+
+			<div class="slice-col-50">
+				<div class="slice-text">
+					<h2>Petre Roman</h2>
+					<h4>Compoziție:</h4>
+					<ul>
+						<li>Foi din bezea cu nucă</li>
+						<li>Fiecare foaie caramelizată</li>
+						<li>Cremă de unt</li>
+						<li>Bezea</li>
+					</ul>
+					<h4>Preț:</h4>
+					<p>55 lei/kg</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="slice-row">
+			<div class="slice-col-25">
+				<div class="slice-text h-50">
+					<h2>Inghețată falsă</h2>
+					<h4>Compoziție:</h4>
+					<ul>
+						<li>Blat de cacao</li>
+						<li>Cremă de vanilie</li>
+						<li>Bezea</li>
+					</ul>
+					<h4>Preț:</h4>
+					<p>55 lei/kg</p>
+				</div>
+			</div>
+
+			<div class="slice-col-50">
+				<div class="image">
+					<img src="images/prajituri-cropped.png">
+				</div>
+			</div>
+
+			<div class="slice-col-25">
+				<div class="slice-text h-50">
+					<h2>Lămâița</h2>
+					<h4>Compoziție:</h4>
+					<ul>
+						<li>Foi albe</li>
+						<li>Cremă de unt cu lămâie</li>
+						<li>Glazură de lămâie</li>
+					</ul>
+					<h4>Preț:</h4>
+					<p>45 lei/kg</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="slice-row">
+			<div class="slice-col-50">
+				<div class="slice-text">
+					<h2>Prăjitură cu cafea</h2>
+					<h4>Compoziție:</h4>
+					<ul>
+						<li>Blat de cacao cu cafea</li>
+						<li>Cremă de unt cu cafea</li>
+					</ul>
+					<h4>Preț:</h4>
+					<p>45 lei/kg</p>
+				</div>
+			</div>
+
+			<div class="slice-col-50">
+				<div class="slice-text">
+					<h2>Doboș</h2>
+					<h4>Compoziție:</h4>
+					<ul>
+						<li>Foi cu cacao</li>
+						<li>Cremă de unt cu ciocolată</li>
+					</ul>
+					<h4>Preț:</h4>
+					<p>60 lei/kg</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="fixed">
+			<a href="#" onclick="openForm()">Feedback</a>
+		</div>
+
+		<div class="form-popup" id="myForm">
+			<form action="" class="form-container">
+				<h1>Lasă-ne un feedback</h1>
+				<p>Cât de mult apreciați produsele noastre?</p>
+				<div class="rate">
+					<input type="radio" id="star5"><label for="star5"></label>
+					<input type="radio" id="star4"><label for="star4"></label>
+					<input type="radio" id="star3"><label for="star3"></label>
+					<input type="radio" id="star2"><label for="star2"></label>
+					<input type="radio" id="star1"><label for="star1"></label>
+				</div>
+				<button type="submit" class="submit-btn">Votează</button>
+				<button type="submit" class="close-btn" onclick="closeForm()">X</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-container">
+			<div class="footer-col">
+				<h1>COMENZI & LIVRARE</h1>
+				<a href="#">Cum comand?</a>
+				<a href="#">Cum plătesc?</a>
+				<a href="#">Livrare</a>
+			</div>
+			<div class="footer-col">
+				<h1>SOCIAL MEDIA</h1>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h1>CONTACT</h1>
+				<div class="contact">
+					<a href="#"><i class="fa fa-home"></i>Campia Turzii, Cluj</a>
+					<a href="#"><i class="fa fa-phone"></i>0264 892 871</a>
+					<a href="#"><i class="fa fa-envelope"></i>office@mmcakes.ro</a>
+				</div>
+			</div>
+		</div>
+		<div class="end-footer">
+			<div>&#169; MMCakes 2020 | Webdesign by DM</div>
+		</div>
+	</footer>
+
+	<script>
+		function openForm() {
+			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		}
+
+		const toggleButton = document.getElementsByClassName('toggle-button')[0]
+		const navbar = document.getElementsByClassName('navbar')[0]
+
+		toggleButton.addEventListener('click', () => {
+			navbar.classList.toggle('active')
+		})
+
+	</script>
+</body>
+</html>

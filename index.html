@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<title>My Page</title>
+</head>
+<body>
+<header>
+	<div class="header-container">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo5.png"></a>
+		</div>
+		<a href="#" class="toggle-button">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</a>
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html" class="link">Home</a></li>
+				<li><a href="about.html" class="link">Despre noi</a></li>
+				<li class="dropdown">
+					<a href="#" class="link">Produse<i class="far fa-heart"></i></a>
+					<div class="dropdown-content">
+						<a href="torturi.html">Torturi</a>
+						<a href="prajituri.html">Prăjituri de casă</a>
+						<a href="briose.html">Brioșe</a>
+						<a href="macaroons.html">Macaroons</a>
+						<a href="cheesecake.html">Cheesecake</a>
+					</div>
+				</li>
+				<li><a href="galerie.html" class="link">Galerie</a></li>
+				<li><a href="contact.html" class="link">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<section class="section-one">
+	<div class="slide-text home-text">
+		<p>Dorința noastră este să aducem un strop de fericire în viața celor dragi ție</p>  
+	</div>
+
+	<div class="image-container">
+		<div class="item-container">
+			<div class="image-item frame">
+				<div class="image inner-frame">
+					<img src="images/tort-exquisite1.png">
+				</div>
+				<div class="text">Exquisite</div>
+			</div>
+		</div>
+
+		<div class="item-container">
+			<div class="image-item frame">
+				<div class="image inner-frame">
+					<img src="images/tort-blooming.png">
+				</div>
+				<div class="text">Blooming</div>
+			</div>
+		</div>
+
+		<div class="item-container">
+			<div class="image-item frame">
+				<div class="image inner-frame">
+					<img src="images/tort-sophisticated.png">
+				</div>
+				<div class="text">Sophisticated</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<section class="section-one">
+	<div class="description">
+		<div class="title">
+			<h1>Gustul de acasă</h1>
+		</div>
+		<div class="info">
+			<div class="info-text">
+				Îți este dor de copilărie? De gustul și mirosul
+				prăjiturilor ce erau puse la cuptor de către mama sau bunica? 
+				MMCakes oferă o gamă variată de torturi și prăjituri făcute în 
+				casă, nelipsite de ingredientul nostru secret, iubirea care îți
+				amintește de gustul de acasă.
+			</div>
+		</div>
+
+		<div class="image middle">
+			<img src="images/cake-cropped.png">
+		</div>
+	</div>
+	<div class="fixed">
+		<a href="#" onclick="openForm()">Feedback</a>
+	</div>
+
+	<div class="form-popup" id="myForm">
+		<form action="" class="form-container">
+			<h1>Lasă-ne un feedback</h1>
+			<p>Cât de mult apreciați produsele noastre?</p>
+			<div class="rate">
+				<input type="radio" id="star5"><label for="star5"></label>
+				<input type="radio" id="star4"><label for="star4"></label>
+				<input type="radio" id="star3"><label for="star3"></label>
+				<input type="radio" id="star2"><label for="star2"></label>
+				<input type="radio" id="star1"><label for="star1"></label>
+			</div>
+			<button type="submit" class="submit-btn">Votează</button>
+			<button type="submit" class="close-btn" onclick="closeForm()">X</button>
+		</form>
+	</div>
+</section>
+
+<section class="section-one">
+	<div class="gallery-title slide-text dots">
+		<h2>Produse recomandate</h2>
+	</div><br>
+	<div class="slice-row">
+		<div class="slice-col-25-h">
+			<div class="image-overlay">
+				<img src="images/tort-cioco-2.png" class="image">
+				<div class="overlay">
+					Tort ciocolată
+				</div>
+			</div>
+		</div>
+		<div class="slice-col-25-h">
+			<div class="image-overlay">
+				<img src="images/briose3.png" class="image">
+				<div class="overlay">
+					Brioșe
+				</div>
+			</div>
+		</div>
+		<div class="slice-col-25-h">
+			<div class="image-overlay">
+				<img src="images/prajituri.png" class="image">
+				<div class="overlay">
+					Prăjituri de casă
+				</div>
+			</div>
+		</div>
+		<div class="slice-col-25-h">
+			<div class="image-overlay">
+				<img src="images/tort-trio.png" class="image">
+				<div class="overlay">
+					Tort trio
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slice-row">
+		<div class="slide-text dots-down">
+			<p>Alegem ingredientele cu grijă pentru a obține cele mai autentice gusturi care vor aduce zâmbete pe buzele celor dragi.</p>
+		</div>
+	</div>
+
+</section>
+
+<section class="slideshow-section">
+
+	<div class="slideshow">
+		
+		<div class="slides">
+			
+			<div class="slide fade">
+				<img src="images/1.jpeg" alt="">
+			</div>
+
+			<div class="slide fade">
+				<img src="images/2.jpeg" alt="">
+			</div>
+
+			<div class="slide fade">
+				<img src="images/3.jpeg" alt="">
+			</div>
+
+			<div class="slide fade">
+				<img src="images/4.jpeg" alt="">
+			</div>
+
+			<div class="slide fade">
+				<img src="images/5.jpeg" alt="">
+			</div>
+	
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+</section>
+
+<footer>
+	<div class="footer-container">
+		<div class="footer-col">
+			<h1>COMENZI & LIVRARE</h1>
+			<a href="#">Cum comand?</a>
+			<a href="#">Cum plătesc?</a>
+			<a href="#">Livrare</a>
+		</div>
+		<div class="footer-col">
+			<h1>SOCIAL MEDIA</h1>
+			<ul class="social-media">
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-col">
+			<h1>CONTACT</h1>
+			<div class="contact">
+				<a href="#"><i class="fa fa-home"></i>Câmpia Turzii, Cluj</a>
+				<a href="#"><i class="fa fa-phone"></i>0264 892 871</a>
+				<a href="#"><i class="fa fa-envelope"></i>office@mmcakes.ro</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="end-footer">
+		<div>&#169; MMCakes 2020 | Webdesign by DM</div>
+	</div>
+</footer>
+
+
+<script>
+	var slideIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("slide");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > x.length) {slideIndex = 1}
+			x[slideIndex-1].style.display = "block";
+		setTimeout(carousel, 5000); 
+	}
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("slide");
+		if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slides[slideIndex-1].style.display = "block";  
+			}
+
+			function openForm() {
+				document.getElementById("myForm").style.display = "block";
+			}
+
+			function closeForm() {
+				document.getElementById("myForm").style.display = "none";
+			}
+
+			const toggleButton = document.getElementsByClassName('toggle-button')[0]
+			const navbar = document.getElementsByClassName('navbar')[0]
+
+			toggleButton.addEventListener('click', () => {
+				navbar.classList.toggle('active')
+			})
+
+
+		</script>
+	</body>
+	</html>

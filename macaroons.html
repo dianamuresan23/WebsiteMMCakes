@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<title>My Page</title>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo5.png"></a>
+			</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<nav class="navbar">
+				<ul>
+					<li><a href="index.html" class="link">Home</a></li>
+					<li><a href="about.html" class="link">Despre noi</a></li>
+					<li class="dropdown">
+						<a href="#" class="link">Produse<i class="far fa-heart"></i></a>
+						<div class="dropdown-content">
+							<a href="torturi.html">Torturi</a>
+							<a href="prajituri.html">Prăjituri de casă</a>
+							<a href="briose.html">Brioșe</a>
+							<a href="macaroons.html">Macaroons</a>
+							<a href="cheesecake.html">Cheesecake</a>
+						</div>
+					</li>
+					<li><a href="galerie.html" class="link">Galerie</a></li>
+					<li><a href="contact.html" class="link">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="section-one">
+		<div class="gallery-title">
+			<h2>Macaroons</h2> 
+		</div>
+
+		<div class="slice-row">
+			<div class="slice-col-33">
+				<div class="item-container move-down">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/macaroons5.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slice-col-33">
+				<div class="recipe">
+					<h1>Macaroons cu Ciocolată</h1>
+					<h3><i class="fa fa-clock"></i>Timp preparare: 110 minute</h3>
+					<h3><i class="fas fa-utensils"></i>Porții: 20 bucăți</h3>
+					<h3><i class="fa fa-coffee"></i>Ingrediente:</h3>
+					<ul> 
+						<li>70 g făină de migdale</li>
+						<li>180 g zahăr pudră</li>
+						<li>90 g albuș de ou</li>
+						<li>70 g zahăr alb tos</li> 
+						<li>2-3 picături de colorant gel culoarea piersicii</li>
+						<li>120 g piure de caise</li>
+						<li>50 g sirop de glucoză</li> 
+						<li>200 g ciocolată albă de calitate</li>
+						<li>25 g unt de cacao</li>
+					</ul> 
+				</div>
+			</div>
+
+			<div class="slice-col-33">
+				<div class="item-container move-down">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/macaroons3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="slice-row">
+			<div class="slice-col-33">
+				<div class="item-container move-down">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/macaroons4.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slice-col-33">
+				<div class="recipe">
+					<h1>Mod de preparare:</h1>
+					<ul>
+						<li>Se pregătesc 2 tăvi de aragaz, care se tapetează cu hârtie de copt și se pregătește o pungă pentru ornat.</li>
+						<li>Făina de migdale și zahărul pudră se amestecă și se cern de 2-3 ori.</li>
+						<li>Albușurile se bat spumă cu un praf de sare, se adaugă zahărul tos, iar după ce s-a format o bezea tare colorantul.</li> 
+						<li>În bezea se adaugă mixtura de făină de migdale cu zahăr pudră și se transferă compoziția în punga de ornat.</li>
+						<li>În tăvile pregătite se formează discuri cu diametrul de circa 4 cm și se lasă la odihnă timp de o oră, după care se pun la copt timp de 15-20 minute la 130 grade.</li>
+						<li>Piureul de caise împreună cu glucoza se încălzesc ușor, ciocolata albă și untul de cacao se topesc separat, apoi se amestecă.</li>
+						<li>Cele 2 mixturi se amestecă, iar compoziția obținută se pune la frigider pentru câteva ore.</li>
+						<li>Se pune cremă pe un rând de cochilii, apoi se suprapun cochiliile din cel de-al doilea rând.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="slice-col-33">
+				<div class="item-container move-down">
+					<div class="image-item">
+						<div class="image">
+							<img src="images/macaroons1.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="fixed">
+			<a href="#" onclick="openForm()">Feedback</a>
+		</div>
+
+		<div class="form-popup" id="myForm">
+			<form action="" class="form-container">
+				<h1>Lasă-ne un feedback</h1>
+				<p>Cât de mult apreciați produsele noastre?</p>
+				<div class="rate">
+					<input type="radio" id="star5"><label for="star5"></label>
+					<input type="radio" id="star4"><label for="star4"></label>
+					<input type="radio" id="star3"><label for="star3"></label>
+					<input type="radio" id="star2"><label for="star2"></label>
+					<input type="radio" id="star1"><label for="star1"></label>
+				</div>
+				<button type="submit" class="submit-btn">Votează</button>
+				<button type="submit" class="close-btn" onclick="closeForm()">X</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-container">
+			<div class="footer-col">
+				<h1>COMENZI & LIVRARE</h1>
+				<a href="#">Cum comand?</a>
+				<a href="#">Cum plătesc?</a>
+				<a href="#">Livrare</a>
+			</div>
+			<div class="footer-col">
+				<h1>SOCIAL MEDIA</h1>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h1>CONTACT</h1>
+				<div class="contact">
+					<a href="#"><i class="fa fa-home"></i>Campia Turzii, Cluj</a>
+					<a href="#"><i class="fa fa-phone"></i>0264 892 871</a>
+					<a href="#"><i class="fa fa-envelope"></i>office@mmcakes.ro</a>
+				</div>
+			</div>
+		</div>
+		<div class="end-footer">
+			<div>&#169; MMCakes 2020 | Webdesign by DM</div>
+		</div>
+	</footer>
+
+	<script>
+		function openForm() {
+			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		}
+
+		const toggleButton = document.getElementsByClassName('toggle-button')[0]
+		const navbar = document.getElementsByClassName('navbar')[0]
+
+		toggleButton.addEventListener('click', () => {
+			navbar.classList.toggle('active')
+		})
+
+	</script>
+</body>
+</html>
